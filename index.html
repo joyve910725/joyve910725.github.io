@@ -3,11 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OK‧MART</title>
+    <link href="./css/ok_mart.css" rel="stylesheet" />
 </head>
 <body>
-    <p>
-        首頁
-    </p>
+    <!--導覽列-->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="MyLogo"></a>
+        </div>
+        
+        <ul>
+            <li><a href="#home">促銷快報</a></li>
+            <li><a href="#about">熱門商品</a></li>
+            <li><a href="#services">便利服務</a></li>
+            <li><a href="#portfolio">OK GO</a></li>
+            <li><a href="#team">活動專區</a></li>
+            <li><a href="#blog">門市查詢</a></li>
+            <li><a href="#contact">加盟招募</a></li>
+            <li><a href="#faq">企業情報</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input type="text" placeholder="問題關鍵字" name="search">
+            <button type="submit"><img src="./img/search_icon.png" alt="Search Icon">搜尋</button>
+        </div>
+    </nav>
+
+<!--輪播圖-->
+     <div class="carousel">
+        <img src="./img/slide1.jpg" alt="Slide 1" class="active">
+        <img src="./img/slide2.jpg" alt="Slide 2">
+        <img src="./img/slide3.jpg" alt="Slide 3">
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+<!--輪播設定-->
+    <script>
+        let currentSlideIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel img');
+            const dots = document.querySelectorAll('.carousel-dots .dot');
+            if (index >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (index < 0) {
+                currentSlideIndex = slides.length - 1;
+            } else {
+                currentSlideIndex = index;
+            }
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dots[i].classList.remove('active');
+                if (i === currentSlideIndex) {
+                    slide.classList.add('active');
+                    dots[i].classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlideIndex + direction);
+        }
+
+        function currentSlide(index) {
+            showSlide(index);
+        }
+
+        // 自动轮播功能（每3秒自动切换）
+        setInterval(() => {
+            changeSlide(1);
+        }, 3000);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlideIndex);
+        });
+    </script>
 </body>
 </html>

@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* 导航栏样式 */
 nav {
     background-color: #ffffff;
     display: flex;
@@ -25,7 +25,7 @@ nav .logo img {
     
     margin-left: 20px; /* 搜索框左侧间距 */
 }
-
+/* 搜索框样式 */
 .search-container input[type="text"] {
     padding: 5px;
     border: none;
@@ -145,4 +145,104 @@ p {
 
 .carousel-dots span.active {
     background-color: #E60012;
+}
+
+.content {
+    padding: 20px;
+}
+
+.video-section {
+    display: flex;
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: 213px;
+    height: 56px;
+    background-color: #E60012;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.button img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.news-section {
+    margin-top: 20px;
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+}
+
+.news-header span {
+    font-size: 23px;
+    font-weight: bold;
+    color: #E60012;
+}
+
+.news-header hr {
+    flex-grow: 1;
+    height: 1px;
+    background-color: grey;
+    border: none;
+    margin: 0 10px;
+}
+
+/* 整体内容区域宽度 */
+.see-more-button {
+    display: flex;
+    align-items: center;
+    width: 118px;
+    height: 35px;
+    background-color: #E60012;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.see-more-button img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.content-wrapper {
+    width: 840px; /* 整体内容区域宽度 */
+    margin: 0 auto;
+}
+.buttons-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.first-section {
+    display: flex
+}
+
+.news-content{
+    display: flex;
+    justify-content: space-around
+}
+.news-item{
+    width: 280px
+    flex: 1 1 50%;
+    margin: 10px;
 }

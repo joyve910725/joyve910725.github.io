@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OK‧MART</title>
     <link href="./css/ok_mart.css" rel="stylesheet" />
+    <link rel="icon" href="img/OK.png" type="image/x-icon">
 </head>
 <body>
     <!--導覽列-->
@@ -30,8 +31,8 @@
         </div>
     </nav>
 
-<!--輪播圖-->
-     <div class="carousel">
+    <!--輪播圖-->
+    <div class="carousel">
         <img src="./img/slide1.jpg" alt="Slide 1" class="active">
         <img src="./img/slide2.jpg" alt="Slide 2">
         <img src="./img/slide3.jpg" alt="Slide 3">
@@ -45,7 +46,81 @@
         <span class="dot" onclick="currentSlide(2)"></span>
     </div>
 
-<!--輪播設定-->
+    <!-- 內容區 -->
+    <div class="content-wrapper">
+        <div class="content">
+            <!-- 第一區 -->
+            <div class="first-section">
+                <div class="video-section">
+                <iframe width="553" height="257" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="buttons-section">
+                    <button class="button">
+                        <img src="img/arrow-icon.png" alt="Arrow Icon">
+                        店到店服務
+                    </button>
+                    <button class="button">
+                        <img src="img/arrow-icon.png" alt="Arrow Icon">
+                        精選預購商品
+                    </button>
+                    <button class="button">
+                        <img src="img/arrow-icon.png" alt="Arrow Icon">
+                        OK mall
+                    </button>
+                    <button class="button">
+                        <img src="img/arrow-icon.png" alt="Arrow Icon">
+                        OK pay
+                    </button>
+                </div>
+            </div>
+
+            <!-- 第二區 -->
+            <div class="second-section">
+                <div class="news-header">
+                    <span>• 最新消息</span>
+                    <hr>
+                    <button class="see-more-button">
+                        <img src="img/arrow-icon.png" alt="Arrow Icon">
+                        See more
+                    </button>
+                </div>
+                <div class="news-content">
+                    <div class="news-item">
+                        <img src="img/news1.jpg" alt="News 1">
+                        <div class="news-tag">
+                            <span class="discount">優惠</span>
+                            <span class="date">2024/04/22</span>
+                        </div>
+                        <div class="news-title">
+                            獨家開賣「鮮芋仙-芋頭椰奶冰棒」指定冰品再享任2件85折
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="img/news2.jpg" alt="News 2">
+                        <div class="news-tag">
+                            <span class="discount">優惠</span>
+                            <span class="date">2024/04/22</span>
+                        </div>
+                        <div class="news-title">
+                            獨家開賣「鮮芋仙-芋頭椰奶冰棒」指定冰品再享任2件85折
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="img/news3.jpg" alt="News 3">
+                        <div class="news-tag">
+                            <span class="discount">優惠</span>
+                            <span class="date">2024/04/22</span>
+                        </div>
+                        <div class="news-title">
+                            獨家開賣「鮮芋仙-芋頭椰奶冰棒」指定冰品再享任2件85折
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--輪播設定-->
     <script>
         let currentSlideIndex = 0;
 

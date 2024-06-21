@@ -464,3 +464,115 @@ h1 {
 .info-text {
     font-size: 16px;
 }
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-content {
+    display: flex;
+    max-width: 840px;
+    margin: 20px auto;
+}
+
+.left-sidebar {
+    width: 170px;
+}
+
+.promo-header {
+    width: 170px;
+    height: 50px;
+    background-color: #E60012;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.promo-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-button {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 14px;
+    cursor: pointer;
+}
+
+.promo-button:hover {
+    background-color: #FFE2E4;
+}
+
+.promo-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.main-section {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.section-title {
+    font-size: 40px;
+    text-align: left;
+    color: #E60012;
+}
+
+.section-divider {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.promo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.promo-item {
+    width: 300px;
+    height: 246px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.promo-item img {
+    width: 100%;
+    height: 167px;
+    object-fit: cover;
+}
+
+.promo-details {
+    background-color: #ECECEC;
+    padding: 10px;
+}
+
+.promo-item:hover .promo-details {
+    background-color: #FFE2E4;
+}
+
+.promo-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+}
+
+.site-footer {
+    width: 100%;
+    height: 182px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
